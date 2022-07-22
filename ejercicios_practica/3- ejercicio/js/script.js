@@ -5,32 +5,31 @@
  * en práctica lo visto en clase
  */
 
-/* Enunciado
+/* Enunciado:
 
-Copiar del ejercicio anterior todos los objetos de tipo de pokemon
-que ha generado.
-Utilice ese objetos para crear una tarjeta de descripción de cada uno,
-agregue esa información al HTML utilizando "innerHTML" como se vio
-en los últimos ejemplos de clase.
+1)
+Obtener todos los botones utilizando su clase o ID
+y asignarle el evento de mouse "click"
+
+Cuando un botón es presionado, se debe agregar la clase
+"fuego" al botón (deberá cambiar de color)
 
 */
 
+const btnClass1= document.querySelectorAll(".btn");
+boton1.addEventListener("click", function(){
+    boton1.classList.add("fuego");
+    boton1.style.background="red";
+});
 
-// Template para que utilice:
-`
-<article class="${pokemonTipo.estiloClase}">
-<div class="header">
-    ${pokemonTipo.titulo}
-</div>            
-<div>
-    <p id="descripcion">
-        ${pokemonTipo.descripcion}
-    </p>
-</div>
-<img
-  src=${pokemonTipo.icono}
-  class="icon-type"
-  alt="icon type"
-/>
-</article>
-`
+const btnClass2= document.querySelectorAll(".btn");
+boton2.addEventListener("click",function(){
+    boton2.classList.add("fuego");
+    boton2.style.background="orange";
+});
+
+const btnClass3= document.querySelectorAll(".btn");
+boton3.addEventListener("click", function(){
+    boton3.classList.add("fuego");
+    boton3.style.background="yellow";
+});
